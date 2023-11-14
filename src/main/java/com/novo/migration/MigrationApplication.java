@@ -98,7 +98,7 @@ public class MigrationApplication {
 		}
 		response = "'" + response +"'";
 		if(date.equals("CURRENT_TIMESTAMP")){
-			response ="FORMAT(SYSDATETIME(), 'yyyy-MM-dd HH:mm:ss.SSS')";
+			response ="FORMAT(SYSDATETIME(), 'yyyy-MM-dd HH:mm:ss.fff')";
 		}
 		return response;
 
